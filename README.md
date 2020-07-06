@@ -9,6 +9,9 @@ _**Business News** is the website for finding business news articles from variou
 #### Data Architecture
 
 > This section defines data architecture inclusive of site map.
+> -Upon load the page will display top news based on page name as a search term.
+> -There will be an option for the user to choose a specfic publication to drill down data.
+> -When a user finds an article he or she would like to read, a simple click is all that is needed to return a page with the full article.
 
 ```
 
@@ -20,15 +23,11 @@ _**Business News** is the website for finding business news articles from variou
       |__ Billionaires.html
       |__ Innovation.html
       |__ Leadership.html
-      |__ Money.html
+      |__ Raising Money.html
       |__ Business.html
       |__ Small Business.html
       |__ Lifestyle.html
-      |__ Lists.html
-      |__ Advisor.html
-      |__ Featured.html
-      |__ Breaking.html
-      |__ More.html
+      |__ BreakingNews.html
       |__ Sitemap.html
 ```
 

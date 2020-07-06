@@ -39,6 +39,11 @@ _**Business News** is the website for finding business news articles from variou
 
 ![Desktop](style/Wireframe.png)
 
+Wireframe Link: https://xd.adobe.com/view/74ce5219-2b20-491b-96b5-3139f4ce30ac-219d/
+-Developer View
+-Prototype (Mid-fi)
+-Grid View
+
 #### Mobile View iPhone
 
 ![Mobile View](url)

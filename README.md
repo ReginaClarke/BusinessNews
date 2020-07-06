@@ -16,7 +16,7 @@ _**Business News** is the website for finding business news articles from variou
 ```
 
 |__ Style/
-      |__ Index.css
+      |__ Style.css
       |__ Business News Logo
 |__ Pages/
       |__ Index.html
@@ -35,21 +35,11 @@ _**Business News** is the website for finding business news articles from variou
 
 ### Wireframes
 
-#### Desktop View
+#### Desktop View 1920 x 1080
 
-![Landing Page](url)
+![Desktop](style/Wireframe.png)
 
-- Landing
-
-![News By Topic](url)
-
-- By Topic
-
-![Read Article](url)
-
-- Read Article
-
-#### Mobile View
+#### Mobile View iPhone
 
 ![Mobile View](url)
 

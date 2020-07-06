@@ -11,7 +11,7 @@ _**Business News** is the website for finding business news articles from variou
 > This section defines data architecture inclusive of site map.
 
 ```
-    
+
 |__ Style/
       |__ Index.css
       |__ Business News Logo
@@ -68,9 +68,9 @@ Search criteria:
 -Source domain name
 -Language
 
-|   API   | Quality Docs? | Website              | Sample Query                                                                                                                     |
-| :-----: | :-----------: | :------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| NewsAPI |      yes      | https://newsapi.org/ | http://newsapi.org/v2/everything?domains=wsj.com&apiKey=APIKEY                                        |
+|   API   | Quality Docs? | Website              | Sample Query                                                                                           |
+| :-----: | :-----------: | :------------------- | :----------------------------------------------------------------------------------------------------- |
+| NewsAPI |      yes      | https://newsapi.org/ | http://newsapi.org/v2/everything?domains=wsj.com&apiKey=APIKEY                                         |
 | NewsAPI |      yes      | https://newsapi.org/ | http://newsapi.org/v2/everything?q=bitcoin&from=2020-06-06&sortBy=publishedAt&apiKey=APIKEY            |
 | NewsAPI |      yes      | https://newsapi.org/ | http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=APIKEY                         |
 | NewsAPI |      yes      | https://newsapi.org/ | http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=APIKEY                                   |
@@ -80,7 +80,7 @@ Search criteria:
 
 ### Technologies Used
 
--_AdobeXD_<br> -_Draw.io_<br> -_Visual Studio Code_<br> -_Google Fonts_<br>
+-_AdobeXD_<br> -_Draw.io_<br> -_Visual Studio Code_<br>
 
 <br>
 

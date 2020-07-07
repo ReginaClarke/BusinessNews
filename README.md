@@ -92,8 +92,9 @@ e) Language
 
 ### Technologies Used
 
-- _AdobeXD_\
-- _Draw.io_\ -_Visual Studio Code_
+- _AdobeXD_
+- _Draw.io_
+- _Visual Studio Code_
 
 ### Helper Functions
 

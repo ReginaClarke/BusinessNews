@@ -4,7 +4,7 @@
 
 **Business News** is the website for finding business news articles from various news sources all in one place.
 
-**Forbes Coding Challenge Prompt** \
+**Forbes Coding Challenge Prompt**
 Using any image API of your choice, or API that returns content with images:
 Retrieve a list of at least 50 images and display them as thumbnails on a page
 Paginate thumbnails by 10 thumbnails per page
@@ -24,10 +24,10 @@ All images should be about a specific theme or based on a specific word.
 
 ### Data Architecture
 
-This section defines data architecture inclusive of site map.\
+This section defines data architecture inclusive of site map.
 
-- Upon load the page will display top news based on page name as a search term.\
-- There will be an option for the user to choose a specfic publication to drill down data.\
+- Upon load the page will display top news based on page name as a search term.
+- There will be an option for the user to choose a specfic publication to drill down data.
 - When a user finds an article he or she would like to read, a simple click is all that is needed to return a page with the full article.
 
 ```
@@ -54,20 +54,20 @@ This section defines data architecture inclusive of site map.\
 
 ![Desktop](style/Wireframe.png)
 
-Wireframe Link: https://xd.adobe.com/view/74ce5219-2b20-491b-96b5-3139f4ce30ac-219d/ \
+Wireframe Link: https://xd.adobe.com/view/74ce5219-2b20-491b-96b5-3139f4ce30ac-219d/
 
-a) Developer View\
-b) Prototype (Mid-fi)\
+a) Developer View
+b) Prototype (Mid-fi)
 c) Grid View
 
 #### Mobile View iPhone
 
 ![Mobile View](style/Wireframe-Mobile.png)
 
-Wireframe Link: https://xd.adobe.com/view/503d272a-8620-418e-8f8d-3890f173d935-056e/ \
+Wireframe Link: https://xd.adobe.com/view/503d272a-8620-418e-8f8d-3890f173d935-056e/
 
-a) Developer View\
-b) Prototype (Mid-fi)\
+a) Developer View
+b) Prototype (Mid-fi)
 c) Grid View
 
 ### API
@@ -76,10 +76,10 @@ The API used for images is the NewsAPI. I will be extracting the images associat
 
 Search criteria:
 
-a) Keyword or phrase\
-b) Date published\
-c) Source name\
-d) Source domain name\
+a) Keyword or phrase
+b) Date published
+c) Source name
+d) Source domain name
 e) Language
 
 |   API   | Quality Docs? | Website              | Sample Query                                                                                           |

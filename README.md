@@ -4,7 +4,7 @@
 
 **Business News** is the website for finding business news articles from various news sources all in one place.
 
-**Forbes Coding Challenge Prompt**
+**Forbes Coding Challenge Prompt** \
 Using any image API of your choice, or API that returns content with images:
 Retrieve a list of at least 50 images and display them as thumbnails on a page
 Paginate thumbnails by 10 thumbnails per page
@@ -13,13 +13,13 @@ All images should be about a specific theme or based on a specific word.
 
 **Technical Constraints**
 
-- Built with html/js/css\
-- May use pre-processors for css (but no frameworks, such as bootstrap)\
-- May use whatever build tools desired\
-- The application should work and run when executing `npm i && npm start` from its root directory\
-- Vanilla JS (no frameworks, or libraries)\
-- Take responsive design into consideration\
-- Needs to work in Chrome\
+- Built with html/js/css
+- May use pre-processors for css (but no frameworks, such as bootstrap)
+- May use whatever build tools desired
+- The application should work and run when executing `npm i && npm start` from its root directory
+- Vanilla JS (no frameworks, or libraries)
+- Take responsive design into consideration
+- Needs to work in Chrome
 - If applicable: Include instructions for running your unit tests
 
 ### Data Architecture

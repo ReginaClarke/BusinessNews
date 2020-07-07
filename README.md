@@ -40,9 +40,10 @@ _**Business News** is the website for finding business news articles from variou
 ![Desktop](style/Wireframe.png)
 
 Wireframe Link: https://xd.adobe.com/view/74ce5219-2b20-491b-96b5-3139f4ce30ac-219d/
-a) Developer View
-b) Prototype (Mid-fi)
-c) Grid View
+<br>
+a) Developer View\
+b) Prototype (Mid-fi)\
+c) Grid View\
 
 #### Mobile View iPhone
 
@@ -56,11 +57,11 @@ c) Grid View
 
 Search criteria:
 
-a) Keyword or phrase
-b) Date published
-c) Source name
-d) Source domain name
-e) Language
+a) Keyword or phrase\
+b) Date published\
+c) Source name\
+d) Source domain name\
+e) Language\
 
 |   API   | Quality Docs? | Website              | Sample Query                                                                                           |
 | :-----: | :-----------: | :------------------- | :----------------------------------------------------------------------------------------------------- |

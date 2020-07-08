@@ -15,12 +15,6 @@ html {
   top: 0;
 }
 
-/* .business-name a:link {
-  margin: 0 auto;
-  text-decoration: none;
-} */
-
-
 nav ul {
   display: flex;
   justify-content: space-around;

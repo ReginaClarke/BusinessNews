@@ -11,17 +11,15 @@ html {
   width: 100%;
   height: fit-content;
   margin: 0em auto;
+  position: fixed;
+  top: 0;
 }
 
-.business-name a:link {
+/* .business-name a:link {
   margin: 0 auto;
   text-decoration: none;
-}
+} */
 
-.logo {
-  width: 60px;
-  padding: 0;
-}
 
 nav ul {
   display: flex;
@@ -42,6 +40,11 @@ a:visited {
   text-decoration: none;
   color: #f4f4f4;
   list-style-type: none;
+}
+
+.logo {
+  width: 60px;
+  padding: 0;
 }
 
 li {

@@ -4,8 +4,8 @@
   "description": "### Overview",
   "main": "index.js",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "npm-start-command": "^1.0.1"

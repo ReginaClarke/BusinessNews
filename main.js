@@ -33,7 +33,9 @@ window.addEventListener("load", async () => {
 
       articleTitle = response.data.articles[i].title;
 
-      newsList.innerHTML += `<div><img src=${image} alt="news image"><br>${articleTitle}</div>`;
+      image = null ? `<div class="result"><img src="style/BN.png" alt="news image"><br>${articleTitle}</div>`:
+        
+      newsList.innerHTML += `<div class="result"><img class="article-image" src=${image} alt="news image"><br><p class="article-title">${articleTitle}</p></div>`;
     }
   } catch (error) {
     console.log("error");

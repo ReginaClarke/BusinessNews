@@ -1,0 +1,28 @@
+{
+  "name": "BusinessNews",
+  "version": "1.0.0",
+  "description": "### Overview",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "npm-start-command": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "open pages/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReginaClarke/BusinessNews.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReginaClarke/BusinessNews/issues"
+  },
+  "homepage": "https://github.com/ReginaClarke/BusinessNews#readme"
+}

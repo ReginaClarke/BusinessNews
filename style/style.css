@@ -5,7 +5,7 @@ html {
   display: block;
   margin: 0 auto;
 }
-
+/* ----------------- HEADER ----------------------- */
 .header {
   background-color: #181716;
   width: 100%;
@@ -122,3 +122,5 @@ a:hover {
   font-weight: bolder;
   font-size: 15px;
 }
+
+

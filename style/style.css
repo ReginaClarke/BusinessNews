@@ -3,7 +3,7 @@ html {
   width: 100%;
   height: 100%;
   display: block;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .header {
@@ -11,7 +11,7 @@ html {
   width: 100%;
   height: fit-content;
   margin: 0em auto;
-  position: fixed;
+  position: relative;
   top: 0;
 }
 
@@ -48,4 +48,77 @@ li {
 
 a:hover {
   color: grey;
+}
+
+/* -----------------LANDING PAGE------------------------ */
+
+.container {
+  text-align: center;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 50px;
+}
+
+.result {
+  border: 10px;
+  border-style: double;
+  border-color: #181716;
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  text-align: center;
+  display: flexbox;
+  flex-wrap: wrap;
+  background-position: center;
+}
+
+@media (max-width: 1900px) {
+  .results {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1600px) {
+  .results {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1325px) {
+  .results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .result {
+    width: 15em;
+    height: 20em;
+  }
+}
+
+
+/* -----------------IMAGE THUMBNAILS------------------------ */
+
+.article-image {
+  height: 150px;
+  width: 150px;
+  margin: 20px;
+  object-fit: cover;
+}
+
+.article-title{
+  margin: 0em auto 0em;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 15px;
 }

@@ -20,6 +20,9 @@ const US_LIFESTYLE_BASE_URL = `${BASE_URL}lifestyle&pageSize=50&sortBy=published
 //----------------------------------------
 
 const newsList = document.querySelector(".results");
+const articleQty = document.querySelector(".article-numbers");
+const nextPage = document.querySelector(".next-page");
+
 
 window.addEventListener("load", async () => {
   try {
@@ -27,16 +30,21 @@ window.addEventListener("load", async () => {
     console.log("Successfully pulled");
     console.log("Total Results: ", response.data.totalResults);
     console.log(response.data.articles.length);
+    numberOfArticles = response.data.articles.length
 
-    for (let i = 0; i < response.data.articles.length; i += 1) {
+
+    for (let i = 0; i < 10; i += 1) {
+
+    // for (let i = 0; i < response.data.articles.length; i += 1) {
       image = response.data.articles[i].urlToImage;
-
       articleTitle = response.data.articles[i].title;
+      
+      newsList.innerHTML += `<div class="result"><img class="article-image" src=${image} alt="news image" placeholder="../style/BN.png"><br><p class="article-title">${articleTitle}</p></div>`;
 
-      image = null ? `<div class="result"><img src="style/BN.png" alt="news image"><br>${articleTitle}</div>`:
-        
-      newsList.innerHTML += `<div class="result"><img class="article-image" src=${image} alt="news image"><br><p class="article-title">${articleTitle}</p></div>`;
     }
+    
+    articleQty.innerHTML = `<div class="article-numbers"><h4 class="article-title">Showing 10 of ${numberOfArticles}</h4></div>`;
+
   } catch (error) {
     console.log("error");
   }

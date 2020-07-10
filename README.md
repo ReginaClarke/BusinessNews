@@ -96,13 +96,6 @@ e) Language
 - _Axios_
 - _Visual Studio Code_
 
-### Helper Functions
-
-Use this section to document all helper functions– generic functions that can be reused in other applications.
-
-|  Function  | Description                                |
-| :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
 
 ### Post-MVP
 

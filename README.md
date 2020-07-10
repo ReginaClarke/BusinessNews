@@ -93,7 +93,7 @@ e) Language
 ### Technologies Used
 
 - _AdobeXD_
-- _Draw.io_
+- _Axios_
 - _Visual Studio Code_
 
 ### Helper Functions
@@ -106,32 +106,14 @@ Use this section to document all helper functions– generic functions that can 
 
 ### Post-MVP
 
-Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+The post-MVP would include the following:
 
-#### Post-MVP Goals
-
-- _Add user account and auth capabilities._
-
-### Code Showcase
-
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
-
-### Code Issues & Resolutions
-
-Use this section to list of all major issues encountered and their resolution.
-
-| Error                                                   | Resolution                                             |
-| :------------------------------------------------------ | :----------------------------------------------------- |
-| `app.js:34 Uncaught SyntaxError: Unexpected identifier` | Missing comma after first object in sources {} object. |
+- Detailed page as showin in the wireframe.
+- Article title shown in model
+- Hidden API key from the NewAPI
 
 ### Installation Instructions For Local Machine
 
-### Link to deployed site (for quick reference while scrolling through readme file):
-
-Netlify(front-end): ()
+- Clone code down from GitHub
+- npm i to install all necessary pacakages
+- nmp start to run client side

@@ -106,7 +106,6 @@ a:hover {
   }
 }
 
-
 /* -----------------IMAGE THUMBNAILS------------------------ */
 
 .article-image {
@@ -116,11 +115,42 @@ a:hover {
   object-fit: cover;
 }
 
-.article-title{
+.article-title {
   margin: 0em auto 0em;
   padding: 5px;
   font-weight: bolder;
   font-size: 15px;
 }
 
+/* ----------------- PAGINATION ------------------------ */
 
+.pagenumbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagenumbers button {
+  outline: none;
+  cursor: pointer;
+  background-color: #181716;
+  margin: 10px;
+  transition: 0.4s;
+  color: #f4f4f4;
+  font-size: 12px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 450px) {
+  .pagenumbers {
+    margin: 5px;
+  }
+}
+.pagenumbers button.active {
+  background-color: #f4f4f4;
+  color: #181716;
+  border: solid 5px #181716;
+}

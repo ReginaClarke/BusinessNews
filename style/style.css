@@ -109,16 +109,16 @@ a:hover {
 /* -----------------IMAGE THUMBNAILS------------------------ */
 
 .article-image {
-  height: 120px;
-  width: 120px;
-  margin: 15px;
+  height: 140px;
+  width: 140px;
+  margin: 10px;
   object-fit: cover;
   cursor: pointer;
 }
 
 .article-title {
   margin: 0em auto 0em;
-  padding: 5px;
+  padding: 2px;
   font-weight: bolder;
   font-size: 15px;
   cursor: pointer;
@@ -159,7 +159,7 @@ a:hover {
 
 /* ----------------- MODAL WORK IN PROGRESS------------------------ */
 
- .modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -173,23 +173,25 @@ a:hover {
 
 .modal-content {
   margin: 10% auto;
-  width: 60%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
 }
 
+.modal-image {
+  width: 80%;
+}
 
 .close {
-  color: #ccc;
+  color: #f4f4f4;
   float: right;
-  font-size: 30px;
-  color: #fff;
+  font-size: 60px;
+  color: #f4f4f4;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #181716;
+  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }

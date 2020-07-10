@@ -1,7 +1,6 @@
 const API_KEY = "ff27e3d379a647e0b68a8adb4f8abfcf";
 
-const US_BUSINESS_BASE_URL =
-  "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=";
+const BASE_URL = "http://newsapi.org/v2/everything?q=";
 
 const US_BILLIONAIRES_BASE_URL = `${BASE_URL}billionaires&pageSize=60&sortBy=publishedAt&apiKey=`;
 
@@ -10,21 +9,18 @@ const US_BILLIONAIRES_BASE_URL = `${BASE_URL}billionaires&pageSize=60&sortBy=pub
 window.addEventListener("load", async () => {
   try {
     let response = await axios.get(`${US_BILLIONAIRES_BASE_URL}${API_KEY}`);
-    console.log("Successfully pulled");
+    console.log("API data successfully pulled");
     console.log("Total Results: ", response.data.totalResults);
 
     const newsList = document.querySelector(".results");
-
     const articleArrays = response.data.articles;
-
-    const articleArray = document.getElementById("results");
     const pagination_element = document.getElementById("pagination");
-    
+
     let current_page = 1;
     let articlesshown = 10;
 
     //Split data into lists and renders initial page
-    function DisplayList(items, wrapper, articlesshown_per_page, page) {
+    function DisplayList(items, articlesshown_per_page, page) {
       newsList.innerHTML = "";
       page -= 1;
 
@@ -37,21 +33,56 @@ window.addEventListener("load", async () => {
         let articleTitle =
           paginatedItems[i].title.length < 100
             ? paginatedItems[i].title
-            : `${paginatedItems[i].title.slice(0, 100)}...`;
+            : `${paginatedItems[i].title.slice(0, 90)}...`;
         let articleSource = paginatedItems[i].source.name;
 
         newsList.innerHTML += `<div class="result">
-        <img class="article-image" src=${image} alt="news image" placeholder="../style/BN.png">
+        <img class="article-image modal-content modal-onClick" src=${image} alt="news image" placeholder="../style/BN.png">
         <br>
         <p class="article-title">${articleTitle}</p>
         <br>
         <p class="article-title">${articleSource}</p>
-        </div>`;  
-        
+        </div>`;
       }
+
+      const modalBtn = document.querySelectorAll(".modal-onClick");
+
+      modalBtn.forEach((artImg) => {
+        artImg.addEventListener("click", () => {
+          openModal(artImg.src);
+        });
+      });
     }
 
-    
+    // Get DOM Elements
+    const modal = document.querySelector("#my-modal");
+    const modalImage = document.querySelector(".modal-image");
+    const closeBtn = document.querySelector(".close");
+
+    // Events
+    closeBtn.addEventListener("click", closeModal);
+    window.addEventListener("click", outsideClick);
+
+    // Open
+    function openModal(artImg) {
+      modal.style.display = "block";
+      modalImage.src = artImg;
+      console.log(artImg);
+    }
+
+    //---------------- MODAL ---------------------//
+
+    // Close
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    // Close If Outside Click
+    function outsideClick(e) {
+      if (e.target == modal) {
+        modal.style.display = "none";
+      }
+    }
     //setup pagination buttons
     function SetupPagination(items, wrapper, articlesshown_per_page) {
       wrapper.innerHTML = "";
@@ -71,7 +102,7 @@ window.addEventListener("load", async () => {
 
       button.addEventListener("click", function () {
         current_page = page;
-        DisplayList(items, articleArray, articlesshown, current_page);
+        DisplayList(items, articlesshown, current_page);
 
         let current_btn = document.querySelector(".pagenumbers button.active");
         current_btn.classList.remove("active");
@@ -81,9 +112,9 @@ window.addEventListener("load", async () => {
       return button;
     }
 
-    DisplayList(articleArrays, articleArray, articlesshown, current_page);
+    DisplayList(articleArrays, articlesshown, current_page);
     SetupPagination(articleArrays, pagination_element, articlesshown);
   } catch (error) {
-    console.log("error");
+    console.log(error);
   }
 });

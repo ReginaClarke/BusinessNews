@@ -1,13 +1,14 @@
 const API_KEY = "ff27e3d379a647e0b68a8adb4f8abfcf";
 
-const US_BUSINESS_BASE_URL =
-  "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=";
+const BASE_URL = "http://newsapi.org/v2/everything?q=";
+
+const US_SMALL_BUSINESS_BASE_URL = `${BASE_URL}small-business&pageSize=60&sortBy=publishedAt&apiKey=`;
 
 //----------------------------------------
 
 window.addEventListener("load", async () => {
   try {
-    let response = await axios.get(`${US_BUSINESS_BASE_URL}${API_KEY}`);
+    let response = await axios.get(`${US_SMALL_BUSINESS_BASE_URL}${API_KEY}`);
     console.log("API data successfully pulled");
     console.log("Total Results: ", response.data.totalResults);
 
@@ -47,14 +48,15 @@ window.addEventListener("load", async () => {
       const modalBtn = document.querySelectorAll(".modal-onClick");
 
       modalBtn.forEach((artImg) => {
-        artImg.addEventListener("click", () => { openModal (artImg.src)});
-
+        artImg.addEventListener("click", () => {
+          openModal(artImg.src);
+        });
       });
     }
 
     // Get DOM Elements
     const modal = document.querySelector("#my-modal");
-    const modalImage =document.querySelector(".modal-image")
+    const modalImage = document.querySelector(".modal-image");
     const closeBtn = document.querySelector(".close");
 
     // Events
@@ -64,12 +66,11 @@ window.addEventListener("load", async () => {
     // Open
     function openModal(artImg) {
       modal.style.display = "block";
-      modalImage.src = artImg
+      modalImage.src = artImg;
       console.log(artImg);
     }
 
-
-        //---------------- MODAL ---------------------//
+    //---------------- MODAL ---------------------//
 
     // Close
     function closeModal() {
@@ -113,7 +114,6 @@ window.addEventListener("load", async () => {
 
     DisplayList(articleArrays, articlesshown, current_page);
     SetupPagination(articleArrays, pagination_element, articlesshown);
-
   } catch (error) {
     console.log(error);
   }

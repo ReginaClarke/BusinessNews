@@ -111,6 +111,8 @@ The post-MVP would include the following:
 - Detailed page as showin in the wireframe.
 - Article title shown in model
 - Hidden API key from the NewAPI
+- Create modal for landing page upon first landing to take email as wireframe shows
+- Complete side section of news as wireframe showed
 
 ### Installation Instructions For Local Machine
 

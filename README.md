@@ -4,7 +4,7 @@
 
 **Business News** is the website for finding business news articles from various news sources all in one place.
 
-**Forbes Coding Challenge Prompt**
+**Coding Challenge Prompt**
 Using any image API of your choice, or API that returns content with images:
 Retrieve a list of at least 50 images and display them as thumbnails on a page
 Paginate thumbnails by 10 thumbnails per page
@@ -56,9 +56,9 @@ This section defines data architecture inclusive of site map.
 
 Wireframe Link: https://xd.adobe.com/view/74ce5219-2b20-491b-96b5-3139f4ce30ac-219d/
 
-a) Developer View
-b) Prototype (Mid-fi)
-c) Grid View
+a)Developer View
+b)Prototype (Mid-fi)
+c)Grid View
 
 #### Mobile View iPhone
 
@@ -66,9 +66,9 @@ c) Grid View
 
 Wireframe Link: https://xd.adobe.com/view/503d272a-8620-418e-8f8d-3890f173d935-056e/
 
-a) Developer View
-b) Prototype (Mid-fi)
-c) Grid View
+a)Developer View
+b)Prototype (Mid-fi)
+c)Grid View
 
 ### API
 
@@ -76,11 +76,11 @@ The API used for images is the NewsAPI. I will be extracting the images associat
 
 Search criteria:
 
-a) Keyword or phrase
-b) Date published
-c) Source name
-d) Source domain name
-e) Language
+a)Keyword or phrase
+b)Date published
+c)Source name
+d)Source domain name
+e)Language
 
 |   API   | Quality Docs? | Website              | Sample Query                                                                                           |
 | :-----: | :-----------: | :------------------- | :----------------------------------------------------------------------------------------------------- |

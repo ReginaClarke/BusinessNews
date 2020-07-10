@@ -46,7 +46,10 @@ window.addEventListener("load", async () => {
 
       for (let i = 0; i < paginatedItems.length; i += 1) {
         let image = paginatedItems[i].urlToImage;
-        let articleTitle = paginatedItems[i].title;
+        let articleTitle =
+          paginatedItems[i].title.length < 100 ?
+          paginatedItems[i].title :
+          `${paginatedItems[i].title.slice(0, 100)}...` 
         let articleSource = paginatedItems[i].source.name;
 
         newsList.innerHTML += `<div class="result">

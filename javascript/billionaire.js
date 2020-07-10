@@ -3,19 +3,7 @@ const API_KEY = "ff27e3d379a647e0b68a8adb4f8abfcf";
 const US_BUSINESS_BASE_URL =
   "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=";
 
-const BASE_URL = "http://newsapi.org/v2/everything?q=";
-
-const US_BILLIONAIRES_BASE_URL = `${BASE_URL}billionaires&pageSize=50&sortBy=publishedAt&apiKey=`;
-
-const US_INNOVATION_BASE_URL = `${BASE_URL}innovation&pageSize=50&sortBy=publishedAt&apiKey=`;
-
-const US_LEADERSHIP_BASE_URL = `${BASE_URL}leadership&pageSize=50&sortBy=publishedAt&apiKey=`;
-
-const US_RAISING_MONEY_BASE_URL = `${BASE_URL}raising-money&pageSize=50&sortBy=publishedAt&apiKey=`;
-
-const US_SMALL_BUSINESS_BASE_URL = `${BASE_URL}small-business&pageSize=50&sortBy=publishedAt&apiKey=`;
-
-const US_LIFESTYLE_BASE_URL = `${BASE_URL}lifestyle&pageSize=50&sortBy=publishedAt&apiKey=`;
+const US_BILLIONAIRES_BASE_URL = `${BASE_URL}billionaires&pageSize=60&sortBy=publishedAt&apiKey=`;
 
 //----------------------------------------
 
@@ -31,7 +19,7 @@ window.addEventListener("load", async () => {
 
     const articleArray = document.getElementById("results");
     const pagination_element = document.getElementById("pagination");
-
+    
     let current_page = 1;
     let articlesshown = 10;
 
@@ -47,9 +35,9 @@ window.addEventListener("load", async () => {
       for (let i = 0; i < paginatedItems.length; i += 1) {
         let image = paginatedItems[i].urlToImage;
         let articleTitle =
-          paginatedItems[i].title.length < 100 ?
-          paginatedItems[i].title :
-          `${paginatedItems[i].title.slice(0, 100)}...` 
+          paginatedItems[i].title.length < 100
+            ? paginatedItems[i].title
+            : `${paginatedItems[i].title.slice(0, 100)}...`;
         let articleSource = paginatedItems[i].source.name;
 
         newsList.innerHTML += `<div class="result">
@@ -58,10 +46,12 @@ window.addEventListener("load", async () => {
         <p class="article-title">${articleTitle}</p>
         <br>
         <p class="article-title">${articleSource}</p>
-        </div>`;
+        </div>`;  
+        
       }
     }
 
+    
     //setup pagination buttons
     function SetupPagination(items, wrapper, articlesshown_per_page) {
       wrapper.innerHTML = "";

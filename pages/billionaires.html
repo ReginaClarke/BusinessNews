@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business News</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="icon" href="../style/BN.png" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-links">
+          <nav>
+            <ul>
+              <a href="index.html"><img class="logo" src="../style/BN.png" alt="logo"/></a>
+              <li><a href="billionaires.html">Billionaires</a></li>
+              <li><a href="innovation.html">Innovation</a></li>
+              <li><a href="raisingMoney.html">Raising Money</a></li>
+              <li><a href="business.html">Business</a></li>
+              <li><a href="smallBusiness.html">Small Business</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>Billionaires</h2>
+      <div class="results"></div>
+
+      <div id="my-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img class="modal-image"/>
+      </div>
+      </div>
+      <div class="pagenumbers" id="pagination"></div>
+    </div>
+    
+  </body>
+  <script src="../javascript/billionaire.js"></script>
+</html>
